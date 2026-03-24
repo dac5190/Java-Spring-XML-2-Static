@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      th:replace="~{layout/base-layout :: layout(~{::div})}">
+<body>
+    <div th:fragment="content" class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Knowledge Base</h2>
+            <input type="text" id="docSearch" class="form-control w-25 glass-card" placeholder="Search docs...">
+        </div>
+        
+        <div class="row" id="docGrid">
+            <div th:each="doc : ${docs}" class="col-md-4 mb-4 doc-item">
+                <div class="glass-card h-100">
+                    <span class="badge bg-info mb-2 text-uppercase" th:text="${doc.category}">Category</span>
+                    <h3 class="h5 doc-title" th:text="${doc.title}">Document Title</h3>
+                    <p class="small opacity-75" th:text="${doc.summary}">Summary text...</p>
+                    
+                    <a th:href="${isStaticMapping} ? @{'/docs/' + ${doc.id} + '/index.html'} : @{'/docs/' + ${doc.id}}" 
+                       class="btn-glass mt-3 d-inline-block">
+                       Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('docSearch').addEventListener('input', function(e) {
+                const term = e.target.value.toLowerCase();
+                document.querySelectorAll('.doc-item').forEach(item => {
+                    const title = item.querySelector('.doc-title').innerText.toLowerCase();
+                    item.style.display = title.includes(term) ? 'block' : 'none';
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

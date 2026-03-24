@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document>
+    <id>portable-power</id>
+    <title>Solar Generator Setup</title>
+    <category>Hardware</category>
+    <summary_text>Configuring Anker and EcoFlow units with Renogy panels for off-grid backup.</summary_text>
+    <content_steps>
+        <item>Connect Renogy solar panels to the XT60 input.</item>
+        <item>Verify charging wattage on the portable power station display.</item>
+        <item>Configure the KISAE transfer switch for automatic failover.</item>
+    </content_steps>
+</document>

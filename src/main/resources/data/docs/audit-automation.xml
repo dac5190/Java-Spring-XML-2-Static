@@ -1,0 +1,11 @@
+<document>
+    <id>audit-automation</id>
+    <title>IT Audit Scripts</title>
+    <category>Professional</category>
+    <summary_text>Automating data retrieval and integrity checks for system audits.</summary_text>
+    <content_steps>
+        <item>Identify target datasets within the Integrated Data Retrieval System.</item>
+        <item>Execute Java-based parsing scripts to flag anomalies.</item>
+        <item>Generate summary reports for technical certification compliance.</item>
+    </content_steps>
+</document>

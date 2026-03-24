@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/base-layout :: layout(~{::div})}">
+<body>
+    <div th:fragment="content" class="container">
+        <div class="glass-card mt-5">
+            <h1 th:text="${doc.title}">Title</h1>
+            <span class="badge bg-primary mb-3" th:text="${doc.category}">Category</span>
+            <hr class="border-secondary">
+            <ul>
+                <li th:each="step : ${doc.items}" th:text="${step}" class="mb-2"></li>
+            </ul>
+            <a th:href="${isStaticMapping} ? @{'/index.html'} : @{'/'}" class="btn btn-sm btn-secondary">Back to List</a>
+        </div>
+    </div>
+</body>
+</html>

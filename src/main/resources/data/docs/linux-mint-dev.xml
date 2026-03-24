@@ -1,0 +1,11 @@
+<document>
+    <id>linux-mint-dev</id>
+    <title>Mint Web Dev Environment</title>
+    <category>Software</category>
+    <summary_text>Optimizing Linux Mint for Java Spring Boot and Docker development.</summary_text>
+    <content_steps>
+        <item>Install OpenJDK 25 using SDKMAN.</item>
+        <item>Configure Docker Desktop or Engine for containerized databases.</item>
+        <item>Set up Eclipse/STS with the Lombok agent for cleaner POJOs.</item>
+    </content_steps>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document>
+    <id>getting-started</id>
+    <title>Engine Quick Start</title>
+    <category>Setup</category>
+    <summary_text>Learn how to configure the XML-2-Static engine for your own documentation.</summary_text>
+    <content_steps>
+        <item>Initialize the directory structure using the bootstrap script.</item>
+        <item>Place XML data in the resources/data/docs folder.</item>
+        <item>Run the generate-static.sh script to export to HTML.</item>
+    </content_steps>
+</document>

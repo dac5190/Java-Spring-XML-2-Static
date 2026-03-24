@@ -22,3 +22,32 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Compiled Java class files
+target/
+*.class
+
+# Log files
+*.log
+
+# Eclipse / STS metadata
+.project
+.classpath
+.settings/
+.springBeans
+bin/
+
+# IDE-specific (VS Code / IntelliJ)
+.vscode/
+.idea/
+*.iml
+
+# OS-specific (Linux/Mac)
+.DS_Store
+Thumbs.db
+
+# Project-specific Export Folder
+dist/
+
+# Local Environment / Secrets
+.env
